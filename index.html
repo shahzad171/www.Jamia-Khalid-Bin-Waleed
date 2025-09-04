@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جامعہ خالد بن ولید ٹھینگی</title>
+
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Jameel Noori Nastaleeq", serif;
+      font-size: 22px;
+      line-height: 1.6;
+      background: #f7f8f7;
+    }
+    header {
+      background: #004d40;
+      color: rgb(247, 250, 247);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; /* موبائل کے لیے */
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 5px 0;
+      font-size: 32px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      margin: 5px;
+      text-decoration: none;
+    }
+    nav button {
+      font-size: 18px;
+      padding: 5px 10px;
+      border: none;
+      background: #00796b;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    nav button:hover {
+      background: #00695c;
+    }
+
+    /* Social Icons */
+    .social {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .social a {
+      font-size: 28px;
+      text-decoration: none;
+    }
+    .fa-facebook { color: #1877f2; }
+    .fa-youtube { color: #ff0000; }
+    .fa-whatsapp { color: #25d366; }
+
+    #home {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('https://source.unsplash.com/1200x500/?mosque,islamic') no-repeat center/cover;
+      color: rgb(185, 39, 39);
+    }
+    #home h1 { font-size: 30px; }
+    #home button {
+      padding: 10px 20px;
+      background: #004d40;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    /* Sections */
+    section { padding: 40px 20px;}
+    section h2 { margin-bottom: 15px; color: #004d40; font-size: 32px; }
+    section p { font-size: 20px; }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 80%;height: 80%;
+      border-radius: 5px;
+    }
+
+    /* Forms */
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 18px;
+    }
+    form button {
+      background: #004d40;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    /* Events */
+    .event {
+      background: #e0f2f1;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    /* 📱 موبائل کے لیے */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav button {
+        width: 100%;
+        margin: 5px 0;
+      }
+      .social {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>جامعہ خالد بن ولید ٹھینگی</h1>
+    <nav>
+      <a href="#home"><button>ہوم</button></a>
+      <a href="#about"><button>تعارف</button></a>
+      <a href="#departments"><button>شعبہ جات</button></a>
+      <a href="#gallery"><button>گیلری</button></a>
+      <a href="#admission"><button>داخلہ</button></a>
+      <a href="#events"><button>پروگرامز</button></a>
+      <a href="#contact"><button>رابطہ</button></a>
+      <a href="#maps"><button>مقام(نقشہ)</button></a>
+    </nav>
+    <div class="social">
+      <a href="https://www.facebook.com/p/Jamia-Khalid-Bin-Waleed-100063645973661/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://youtu.be/caw0j3yIBBA?si=9lhbwe72Vh76M4wt" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/923042089030" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home">
+    <h1>خوش آمدید جامعہ خالد بن ولید ٹھینگی میں</h1>
+    <p>قرآن و سنت کی روشنی میں علم کی خدمت</p>
+    <button>مزید جانیں</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>ہمارے بارے میں</h2>
+    <p>جامعہ خالد بن ولید ٹھینگی ضلع وہاڑی کی ایک دینی اور عصری یونیورسٹی ہے۔ جامعہ خالد بن ولید میں ناظرہ و حفظ القرآن، درسِ نظامی، ترجمہ و تفسیرِ قرآن، عربی و اردو زبان اور کمپیوٹر کورسز عمدہ ماحول میں کرائے جاتے ہیں۔</p>
+  </section>
+
+  <!-- Departments -->
+  <section id="departments">
+    <h2>شعبہ جات</h2>
+    <div class="card"><h3>ناظرہ و حفظ القرآن :</h3><p>ماہر قراء کی نگرانی میں دورہ، تصحیحِ لہجہ اور روزانہ کارکردگی رپورٹ۔</p></div>
+    <div class="card"><h3>شعبہ تجوید:</h3><p>عملی مشق قرآن کی تلاوت صحیح لہجے اور قواعد کے ساتھ اور سبع عشرہ بھی کرائی جاتی ہے۔</p></div>
+    <div class="card"><h3>درسِ نظامی :</h3><p>معتبر نصاب کے مطابق ابتدائیہ تا عالمیہ؛ اسباقِ حدیث، فقہ، اصول، نحو و صرف۔</p></div>
+    <div class="card"><h3>طالبات سیکشن :</h3><p>الگ و محفوظ ماحول، فیمیل اسٹاف کے ساتھ مخصوص اوقات میں کلاسز۔</p></div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>گیلری</h2>
+    <div class="gallery">
+      <img src="My-Jamia1.jpg" alt="image1">
+      <img src="My- Jamia2.jpg" alt="image2">
+      <img src="My-Jamia3.jpg" alt="image3">
+    </div>
+  </section>
+
+  <!-- Admission -->
+  <section id="admission" style="background:#f1f1f1;">
+    <h2>داخلہ فارم</h2>
+    <form>
+      <input type="text" placeholder="نام" required>
+      <input type="number" placeholder="عمر" required>
+      <input type="text" placeholder="کورس کا نام" required>
+      <textarea placeholder="پتہ"></textarea>
+      <button type="submit">جمع کروائیں</button>
+    </form>
+  </section>
+
+  <!-- Events -->
+  <section id="events">
+    <h2>پروگرامز</h2>
+    <div class="event">
+      <h2>ماہانہ اجتماع</h2>
+      <p>تاریخ: 10 ستمبر 2025</p>
+    </div>
+    <div class="event">
+      <h2>حفظ قرآن کانفرنس</h2>
+      <p>تاریخ: 20 اکتوبر 2025</p>
+    </div>
+  </section>
+
+  <!-- Donate -->
+  <section id="donate" style="background:#f1f8e9;">
+    <h2>مدد کریں</h2>
+    <p>آپ اپنی زکوٰۃ، صدقات اور عطیات اس ادارے کو دے سکتے ہیں۔</p>
+    <button onclick="alert('Online Donation Coming Soon')">ابھی عطیہ کریں</button>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>رابطہ</h2>
+    <p>پتہ: مین روڈ ملتان، ٹھینگی کالونی وہاڑی</p>
+    <p>📞 فون: 03007749706</p>
+    <p>واٹس ایپ نمبر: 03042089030</p>
+    <p>📧 Email: info@jamia.com</p>
+    <form>
+      <input type="text" placeholder="نام" required>
+      <input type="email" placeholder="ای میل" required>
+      <textarea placeholder="آپ کا پیغام"></textarea>
+      <button type="submit">بھیجیں</button>
+    </form>
+  </section>
+
+  <!-- Map -->
+  <section id="maps">
+    <h3>مقام (نقشہ)</h3>
+    <div style="position:relative;padding-bottom:56%;height:0;overflow:hidden;border-radius:10px">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54451.27316789386!2d72.1443526!3d30.0477088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393cbd748a594d5b%3A0x4714cfcdde945941!2sJamia%20Khalid%20Bin%20Waleed!5e0!3m2!1sen!2s!4v1691788800000!5m2!1sen!2s"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> جامعہ خالد بن ولید ٹھینگی</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
