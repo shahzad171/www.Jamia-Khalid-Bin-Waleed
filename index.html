@@ -62,51 +62,31 @@
       margin-top: 10px;
     }
     .social a {
-      font-size: 32px;
+      font-size: 28px;
       text-decoration: none;
     }
     .fa-facebook { color: #1877f2; }
     .fa-youtube { color: #ff0000; }
     .fa-whatsapp { color: #25d366; }
 
-    /* ✅ Fixed Home Section */
+    /* ✅ Home Section Fix */
     #home {
       text-align: center;
       padding: 80px 20px;
-      background: url('https://source.unsplash.com/1200x500/?mosque,islamic') no-repeat center/cover;
+      background: url('https://source.unsplash.com/1200x600/?mosque,islamic') no-repeat center/cover;
       color: rgb(185, 39, 39);
-      min-height: 100vh;   /* پورے اسکرین کے برابر */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      min-height: 60vh; /* اب یہ پورا screen نہیں روکے گا */
     }
-    #home h1 { 
-      font-size: 34px; 
-      background: rgba(255,255,255,0.6); 
-      padding: 10px 20px; 
-      border-radius: 8px;
-    }
-    #home p {
-      font-size: 22px;
-      margin-top: 10px;
-      background: rgba(255,255,255,0.5);
-      padding: 6px 12px;
-      border-radius: 6px;
-    }
+    #home h1 { font-size: 30px; }
     #home button {
-      padding: 12px 24px;
+      padding: 10px 20px;
       background: #004d40;
       color: white;
-      font-size: 20px;
+      font-size: 18px;
       border: none;
-      border-radius: 6px;
+      border-radius: 5px;
       cursor: pointer;
-      margin-top: 18px;
-      transition: 0.3s;
-    }
-    #home button:hover {
-      background: #00796b;
+      margin-top: 15px;
     }
 
     /* Sections */
@@ -121,8 +101,7 @@
       gap: 10px;
     }
     .gallery img {
-      width: 80%;
-      height: 80%;
+      width: 80%;height: 80%;
       border-radius: 5px;
     }
 
@@ -169,7 +148,7 @@
       font-size: 18px;
     }
 
-    
+    /* 📱 موبائل کے لیے */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
