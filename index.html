@@ -26,9 +26,8 @@
       color: rgb(247, 250, 247);
       padding: 10px 20px;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      flex-wrap: wrap; /* موبائل کے لیے */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -37,14 +36,16 @@
       margin: 5px 0;
       font-size: 32px;
     }
+
+    /* ✅ Nav Grid (4 اوپر، 4 نیچے) */
     nav {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 5px;
       justify-content: center;
+      margin-top: 10px;
     }
     nav a {
-      color: white;
-      margin: 5px;
       text-decoration: none;
     }
     nav button {
@@ -55,6 +56,7 @@
       color: #fff;
       border-radius: 4px;
       cursor: pointer;
+      width: 100%;
     }
     nav button:hover {
       background: #00695c;
@@ -80,7 +82,6 @@
       padding: 80px 20px;
       background: url('https://source.unsplash.com/1200x600/?mosque,islamic') no-repeat center/cover;
       color: rgb(185, 39, 39);
-      /* min-height ہٹا دیا گیا */
     }
     #home h1 { font-size: 30px; }
     #home button {
@@ -155,12 +156,8 @@
 
     /* 📱 موبائل کے لیے */
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
       nav {
-        flex-direction: column;
+        grid-template-columns: repeat(2, auto); /* موبائل پر 2 بٹن فی لائن */
       }
       nav button {
         width: 100%;
